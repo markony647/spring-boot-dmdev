@@ -3,18 +3,13 @@ package com.marchenko.springboot.dmdev.repository;
 import com.marchenko.springboot.dmdev.entity.CompanyEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 
-import javax.transaction.Transactional;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("test")
-@SpringBootTest
-@Transactional
-class CompanyRepositoryTest {
+
+class CompanyRepositoryTest extends IntegrationBaseTest {
 
     private static final Integer APPLE_ID = 1;
 

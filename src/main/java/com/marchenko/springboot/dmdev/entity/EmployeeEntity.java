@@ -24,6 +24,8 @@ public class EmployeeEntity {
 
     private String lastName;
 
+    private int salary;
+
     private LocalDate birthDay;
 
     @ManyToOne
